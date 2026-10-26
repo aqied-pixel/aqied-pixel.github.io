@@ -14,8 +14,14 @@
       <span>Automation<span class="brand-accent">Qied</span></span>
     </a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav">
-      <a href="#services">Services</a>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">Services <span aria-hidden="true">⌄</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="machine-installation.html">Machine Installation</a>
+          <a href="smart-home.html">Smart Home Systems</a>
+        </div>
+      </div>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a class="nav-cta" href="#contact">Request a Quote</a>
@@ -27,7 +33,7 @@
       <div class="hero-content">
         <p class="eyebrow">ENGINEERING · AUTOMATION · SMART LIVING</p>
         <h1>Practical solutions.<br><span>Smarter systems.</span></h1>
-        <p class="hero-copy">Machine installation, industrial automation, and smart home systems — planned around your needs.</p>
+        <p class="hero-copy">Machine installation and smart home systems — planned around your needs.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#services">Explore Services</a>
           <a class="button button-secondary" href="#contact">Discuss Your Project ↗</a>
@@ -48,27 +54,20 @@
         <h2>Services built around your needs</h2>
         <p>From factory equipment to connected homes, explore the support you need for your next project.</p>
       </div>
-      <div class="service-grid">
-        <article class="service-card">
+      <div class="service-grid service-grid-two">
+        <article class="service-card" id="service-installation">
           <div class="service-icon">⚙</div>
-          <p class="card-number">01 / INDUSTRIAL</p>
+          <p class="card-number">01 / MACHINE SERVICES</p>
           <h3>Machine Installation</h3>
-          <p>Installation support, electrical connections, commissioning assistance, machine setup, and troubleshooting.</p>
-          <a href="#contact">Discuss installation <span>↗</span></a>
+          <p>Machine installation, setup, electrical integration, commissioning support, and machine customization projects.</p>
+          <a href="machine-installation.html">Explore machine projects <span>↗</span></a>
         </article>
-        <article class="service-card featured">
-          <div class="service-icon">⌘</div>
-          <p class="card-number">02 / CONTROL</p>
-          <h3>Industrial Automation</h3>
-          <p>Control panels, PLC and HMI projects, sensors, VFD setup, tester automation, and machine monitoring.</p>
-          <a href="#contact">Discuss automation <span>↗</span></a>
-        </article>
-        <article class="service-card">
+        <article class="service-card" id="service-smart-home">
           <div class="service-icon">⌂</div>
-          <p class="card-number">03 / SMART HOME</p>
+          <p class="card-number">02 / SMART HOME</p>
           <h3>Smart Home Systems</h3>
           <p>Smart switches, lighting control, sensors, automated curtains, and practical home-control solutions.</p>
-          <a href="#contact">Discuss smart home <span>↗</span></a>
+          <a href="smart-home.html">Explore smart home projects <span>↗</span></a>
         </article>
       </div>
       <p class="scope-note">Service availability and project scope are confirmed after reviewing your requirements. Electrical work will be undertaken in accordance with applicable requirements and qualifications.</p>
@@ -97,14 +96,20 @@
       <div class="section-heading">
         <p class="eyebrow">PROJECTS & CAPABILITIES</p>
         <h2>Show the work. Build the trust.</h2>
-        <p>This section can feature your real installations, control panels, machine upgrades, and smart-home projects as you complete them.</p>
+        <p>Explore selected engineering work and completed machine projects.</p>
       </div>
-      <div class="project-grid">
-        <article class="project-tile tile-one"><span class="tile-tag">INDUSTRIAL</span><div><h3>Machine Installation</h3><p>Commissioning · Setup · Troubleshooting</p></div></article>
-        <article class="project-tile tile-two"><span class="tile-tag">AUTOMATION</span><div><h3>Control & Monitoring</h3><p>PLC · HMI · Sensors · VFD</p></div></article>
-        <article class="project-tile tile-three"><span class="tile-tag">SMART HOME</span><div><h3>Connected Living</h3><p>Lighting · Switches · Sensors</p></div></article>
+      <div class="project-grid project-grid-single">
+        <a class="project-tile project-featured project-link" href="machine-installation.html" aria-label="View Kitamura CNC retrofit project details">
+          <img class="project-image" src="assets/images/kitamura-knc20f.jpg" alt="Kitamura KNC-20F CNC turning lathe, machine C54">
+          <div class="project-details">
+            <span class="tile-tag">COMPLETED PROJECT · CNC RETROFIT</span>
+            <h3>Kitamura KNC-20F — FANUC to Syntec 22TA</h3>
+            <p>Controller conversion · Servo configuration · Spindle tuning · Electrical I/O integration</p>
+            <span class="project-cta">View project details ↗</span>
+          </div>
+        </a>
       </div>
-      <p class="scope-note">These are capability categories, not claims of completed customer projects. Replace them with your own project photos and descriptions when ready.</p>
+      <p class="scope-note">This section highlights completed work. The Kitamura CNC retrofit is presented as a project example, not as a separate service category.</p>
     </section>
 
     <section class="contact-section" id="contact">
@@ -125,7 +130,7 @@
 
   <footer class="site-footer">
     <a class="brand" href="#home"><span class="brand-mark">AQ</span><span>Automation<span class="brand-accent">Qied</span></span></a>
-    <p>Industrial Automation · Machine Installation · Smart Home</p>
+    <p>Machine Installation · CNC Retrofit Projects · Smart Home</p>
     <span>© <span id="year"></span> AutomationQied. All rights reserved.</span>
   </footer>
   <script src="script.js"></script>
